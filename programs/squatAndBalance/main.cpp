@@ -245,7 +245,6 @@ int main(int argc, char * argv[])
         leftLegTimer.stop();
         rightLegTimer.stop();
     }
-
     leftLegDevice.close();
     rightLegDevice.close();
 

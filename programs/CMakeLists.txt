@@ -1,3 +1,5 @@
+add_subdirectory(oneFootStand)
 add_subdirectory(squatAndBalance)
 add_subdirectory(squatLooped)
 add_subdirectory(stableGait)
+add_subdirectory(zmpViewer)

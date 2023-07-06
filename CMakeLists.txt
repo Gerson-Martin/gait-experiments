@@ -31,9 +31,10 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake
 
 # Hard dependencies.
 find_package(YCM 0.11 REQUIRED)
-find_package(YARP 3.6 REQUIRED COMPONENTS os dev)
+find_package(YARP 3.6 REQUIRED COMPONENTS os dev sig)
 find_package(orocos_kdl 1.4 REQUIRED) # before kin-dyn due to ROS installation
 find_package(ROBOTICSLAB_KINEMATICS_DYNAMICS REQUIRED)
+
 
 # Soft dependencies.
 #find_package(GTestSources 1.8 QUIET)
@@ -61,10 +62,15 @@ enable_testing()
 
 # Add main contents.
 add_subdirectory(libraries)
+INCLUDE_DIRECTORIES(${SUBDIR_INCLUDE_DIRECTORIES})
+
+
 add_subdirectory(programs)
 add_subdirectory(tests)
 add_subdirectory(share)
 add_subdirectory(doc)
+
+
 
 if(FALSE)
     # Collect public exported dependencies.

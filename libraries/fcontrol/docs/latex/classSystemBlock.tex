@@ -1,0 +1,75 @@
+\hypertarget{classSystemBlock}{}\section{System\+Block Class Reference}
+\label{classSystemBlock}\index{System\+Block@{System\+Block}}
+
+
+The \hyperlink{classSystemBlock}{System\+Block} class\+: This class encapsulates a system control block, defined by its transference function G. 
+
+
+
+
+{\ttfamily \#include $<$System\+Block.\+h$>$}
+
+
+
+Inheritance diagram for System\+Block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classSystemBlock__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+Block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classSystemBlock__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSystemBlock_a97f55d7953f7a07d8c2290d5039fa5b6}\label{classSystemBlock_a97f55d7953f7a07d8c2290d5039fa5b6}} 
+{\bfseries System\+Block} (const std\+::vector$<$ double $>$ \&new\+\_\+num\+Coef, const std\+::vector$<$ double $>$ \&new\+\_\+den\+Coef)
+\item 
+\mbox{\Hypertarget{classSystemBlock_a2f513f638f6f177b611f8bdd42fc357d}\label{classSystemBlock_a2f513f638f6f177b611f8bdd42fc357d}} 
+{\bfseries System\+Block} (const std\+::vector$<$ double $>$ \&new\+\_\+num\+Coef, const std\+::vector$<$ double $>$ \&new\+\_\+den\+Coef, double new\+\_\+gain)
+\item 
+\mbox{\Hypertarget{classSystemBlock_aebc24f49318e27ce761c34335ee6fe63}\label{classSystemBlock_aebc24f49318e27ce761c34335ee6fe63}} 
+{\bfseries System\+Block} (const std\+::vector$<$ double $>$ \&new\+\_\+num\+Coef, const std\+::vector$<$ double $>$ \&new\+\_\+den\+Coef, const std\+::vector$<$ double $>$ \&new\+\_\+num\+Exps, const std\+::vector$<$ double $>$ \&new\+\_\+den\+Exps)
+\item 
+\mbox{\Hypertarget{classSystemBlock_ac67265b0f826a3fdaf368ba369260c6b}\label{classSystemBlock_ac67265b0f826a3fdaf368ba369260c6b}} 
+{\bfseries System\+Block} (const \hyperlink{classTransferFunction}{Transfer\+Function} \&newH)
+\item 
+\mbox{\Hypertarget{classSystemBlock_a47f1d89600cf61345ca525d90f8d6d6c}\label{classSystemBlock_a47f1d89600cf61345ca525d90f8d6d6c}} 
+{\bfseries System\+Block} (double b0, double b1, double a0, double a1)
+\item 
+\mbox{\Hypertarget{classSystemBlock_a9d9ce9707e97752cb79b7200381fd5eb}\label{classSystemBlock_a9d9ce9707e97752cb79b7200381fd5eb}} 
+double {\bfseries Get\+Num\+Order} () const
+\item 
+\mbox{\Hypertarget{classSystemBlock_aafa63d22e9bc04dfd6785c82fb624c1b}\label{classSystemBlock_aafa63d22e9bc04dfd6785c82fb624c1b}} 
+double {\bfseries Get\+Den\+Order} () const
+\item 
+\mbox{\Hypertarget{classSystemBlock_ac5d4ba30215886e134be5b708d26a85a}\label{classSystemBlock_ac5d4ba30215886e134be5b708d26a85a}} 
+long {\bfseries Get\+Transfer} (std\+::vector$<$ double $>$ \&num\+Coefficients, std\+::vector$<$ double $>$ \&den\+Coefficients) const
+\item 
+\mbox{\Hypertarget{classSystemBlock_ad151469a821fa0ec313d5437cb75a6d6}\label{classSystemBlock_ad151469a821fa0ec313d5437cb75a6d6}} 
+virtual double {\bfseries Get\+State} ()
+\item 
+\mbox{\Hypertarget{classSystemBlock_a2f74c572b6a9527b6b5bde03ba8ab9e6}\label{classSystemBlock_a2f74c572b6a9527b6b5bde03ba8ab9e6}} 
+double {\bfseries Output\+Update} (double new\+\_\+input)
+\item 
+\mbox{\Hypertarget{classSystemBlock_a6162ac92f0d85ff36bff5210cb220871}\label{classSystemBlock_a6162ac92f0d85ff36bff5210cb220871}} 
+long {\bfseries Reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSystemBlock}{System\+Block} class\+: This class encapsulates a system control block, defined by its transference function G.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+System\+Block.\+h\item 
+System\+Block.\+cpp\end{DoxyCompactItemize}
